@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+}
+body{
+  background: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fscreenpeepers.com%2Fweb%2Fwallpapers%2Fportal%2F5120x2880.jpg&f=1") center center no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+	width: 70%;
+	margin: 0;
+	margin-right: 15%;
+	margin-left: 15%;
+	background: lightgrey;
+	float: left;
+
+}
+ul{
+	max-height: 50vh;
+	overflow-y: auto;
+	width: 90%;
+	margin-left: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background: whitesmoke;
+	border-radius: 5px;
+	float: left;
+}
+li{
+	border-bottom: 1px solid lightgrey;
+	list-style: none;
+	font-size: 1rem;
+	min-height: 5vh;
+
+}
+li:first-of-type{
+	margin-top: 2vh;
+
+}
+.control{
+	float: right;
+}
+header{
+	width: 100%;
+	margin-bottom: 2vh;
+	float: left;
+	background: skyblue;
+}
+header img{
+	width: 20%;
+	float: right;
+}
+header h1{
+	font-size: 3rem;
+	width: 75%;
+	float: left;
+	margin: 0;
+}
+header h2{
+	font-size: 1.5rem;
+	width: 75%;
+	float: left;
+}
+header h2 span{
+	font-style: italic;
+}
+form{
+	width: 100%;
+	float: left;
+}

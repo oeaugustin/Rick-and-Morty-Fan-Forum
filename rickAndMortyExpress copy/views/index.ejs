@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>21 Savage Fans</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette2.wikia.nocookie.net%2Fanimal-jam-clans-1%2Fimages%2Fe%2Feb%2FRickAndMortyBanner.png%2Frevision%2Flatest%3Fcb%3D20160830004939&f=1">
+      <h1>Rick & Morty Fan Forum</h1>
+      <h2>Get <span> Schwifty</span> and add your favorite quote!</h2>
+    </header>
+
+    <form action="/messages" method="POST">
+      <input type="text" placeholder="Your Name Here" name="name">
+      <input id="quote" type="text" placeholder="Add Your Quote Here!" name="msg">
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Quotes from around the Mutiverse:</h3>
+    <ul class="messages">
+    <% for(var i=0; i<messages.length; i++) {%>
+      <li class="message">
+        <span><%= messages[i].name %></span>
+        <span><%= messages[i].msg %></span>
+        <span><%= messages[i].thumbUp %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><%= messages[i].thumbDown %></span>
+        <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        <!-- <section class="control"></section> -->
+        
+      </li>
+    <% } %>
+    </ul>
+  </div>
+  
+  <script src="main.js"></script>
+
+</body>
+</html>
